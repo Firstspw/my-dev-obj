@@ -7,8 +7,6 @@ from myserver import server_on
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
-TOKEN = 'MTE4MzY2OTUxMjY5NzAzMjc1NQ.GJIQWU.nFtxTuPZKh2P3VMqVoWNPSyvM5OHiAIbffw7fA'
-
 
 # ////////// message ////////
 
@@ -50,4 +48,4 @@ async def on_ready():
 
 server_on()
 
-bot.run(TOKEN)
+bot.run(os.getenv('TOKEN'))
