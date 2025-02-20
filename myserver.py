@@ -13,3 +13,6 @@ def run():
 def server_on():
     t = Thread(target=run)
     t.start()
+    t.join()  # รอให้เธรดทำงานเสร็จ
+
+server_on()  # เรียกให้เซิร์ฟเวอร์ทำงาน
